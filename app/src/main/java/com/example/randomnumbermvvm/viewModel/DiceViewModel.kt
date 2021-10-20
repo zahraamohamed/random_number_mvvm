@@ -6,10 +6,10 @@ import com.example.randomnumbermvvm.model.RandomNumberRepository
 
 
 class DiceViewModel : ViewModel() {
-    private val repository = RandomNumberRepository()
+    private val randomNumberRepository = RandomNumberRepository()
     var randomNumber = MutableLiveData<Int>()
 
     fun getNumber() {
-        randomNumber.postValue(repository.randomNumber())
+        randomNumber.postValue(randomNumberRepository.randomNumber())
     }
 }

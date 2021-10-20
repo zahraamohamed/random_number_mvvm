@@ -21,7 +21,6 @@ abstract class BaseFragment<VB : ViewBinding>() : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setup()
     }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
