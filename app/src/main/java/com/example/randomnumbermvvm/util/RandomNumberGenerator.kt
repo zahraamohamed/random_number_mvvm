@@ -1,4 +1,4 @@
-package com.example.randomnumbermvvm.model
+package com.example.randomnumbermvvm.util
 
 import kotlin.random.Random
 

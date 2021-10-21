@@ -2,7 +2,7 @@ package com.example.randomnumbermvvm.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.randomnumbermvvm.model.RandomNumberGenerator
+import com.example.randomnumbermvvm.util.RandomNumberGenerator
 
 
 class DiceViewModel : ViewModel() {
