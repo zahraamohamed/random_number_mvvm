@@ -13,7 +13,6 @@ class DiceFragment :Fragment(){
 lateinit var binding: FragmentHomeBinding
 private val diceViewModel: DiceViewModel by viewModels()
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

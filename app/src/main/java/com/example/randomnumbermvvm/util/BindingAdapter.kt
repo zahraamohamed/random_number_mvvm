@@ -1,7 +1,8 @@
-package com.example.randomnumbermvvm
+package com.example.randomnumbermvvm.util
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
+import com.example.randomnumbermvvm.R
 
 @BindingAdapter(value = ["setImage"])
 fun setImage(view: ImageView?, value: Int) {

@@ -15,36 +15,48 @@
         android:layout_height="match_parent"
         tools:context=".ui.DiceFragment">
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/view_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/dice_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{diceViewModel.randomNumber.toString()}"
             android:textSize="32sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/dice_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="4" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:id="@+id/dice_button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="@{()-> diceViewModel.getNumber()}"
+            android:layout_margin="32dp"
+            android:background="@drawable/button_shape"
+            android:onClick="@{()-> diceViewModel.getRandNumber()}"
             android:padding="8dp"
-            android:text=" dice "
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/dice"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/view" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/dice_image"
             setImage="@{diceViewModel.randomNumber}"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
